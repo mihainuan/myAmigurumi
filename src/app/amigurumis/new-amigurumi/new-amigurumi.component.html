@@ -1,21 +1,20 @@
-<mat-toolbar class="app-title">Cadastrar Amigurumi</mat-toolbar>
+<mat-toolbar class="app-title">Cadastro de Amigurumi</mat-toolbar>
 <div class="main-div">
   <mat-card class="center width50" *ngIf="cadastro" >
     <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="submit()" (ngReset)="reiniciarForm()">
       <mat-card-content>
         <amg-input-text titulo="Nome *" controlName="nome" [formGroup]="cadastro"></amg-input-text>
+        <amg-input-select titulo="Categoria *" [opcoes]="categorias" controlName="categoriaId" [formGroup]="cadastro"></amg-input-select>
         <amg-input-text titulo="Link Foto" controlName="urlFoto" [formGroup]="cadastro"></amg-input-text>
         <amg-input-date titulo="Data de Criação *" controlName="criadoEm" [formGroup]="cadastro"></amg-input-date>
-        <amg-input-textarea titulo="Material" controlName="material" [formGroup]="cadastro"></amg-input-textarea>
-        <amg-input-textarea titulo="Altura" controlName="altura" [formGroup]="cadastro"></amg-input-textarea>
-        <amg-input-textarea titulo="Largura" controlName="largura" [formGroup]="cadastro"></amg-input-textarea>
-        <amg-input-textarea titulo="Peso" controlName="peso" [formGroup]="cadastro"></amg-input-textarea>
-
-        <amg-input-text titulo="Categoria ID *" controlName="categoriaId" [formGroup]="cadastro"></amg-input-text>
+        <amg-input-textarea titulo="Descrição do Material" controlName="material" [formGroup]="cadastro"></amg-input-textarea>
+        <amg-input-number titulo="Altura (cm)" controlName="altura" [formGroup]="cadastro"></amg-input-number>
+        <amg-input-number titulo="Largura (cm)" controlName="largura" [formGroup]="cadastro"></amg-input-number>
+        <amg-input-number titulo="Peso (g)" controlName="peso" [formGroup]="cadastro"></amg-input-number>
       </mat-card-content>
       <mat-card-actions>
-        <button type="submit" color="primary" mat-raised-button>Salvar</button>
-        <button type="reset" color="accent" mat-raised-button>Cancelar</button>
+        <button type="submit" color="primary" mat-raised-button><mat-icon>done_all</mat-icon>Salvar</button>
+        <button type="reset" color="accent" mat-raised-button><mat-icon>clear</mat-icon>Limpar</button>
       </mat-card-actions>
     </form>
   </mat-card>

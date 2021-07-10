@@ -2,9 +2,11 @@
     <mat-sidenav #sidenav class="sidenav" fixedInViewport="true" >
       <mat-toolbar color="primary">Menu</mat-toolbar>
       <mat-nav-list (click)="closeSideNav()">
-        <a mat-list-item [routerLink]="['/amigurumis']">Inicial</a>
+        <a mat-list-item [routerLink]="['/amigurumis']">
+          <mat-icon>home</mat-icon> Inicial</a>
         <mat-divider></mat-divider>
-        <a mat-list-item [routerLink]="['/amigurumis/new']">Cadastrar novo Amigurumi</a>
+        <a mat-list-item [routerLink]="['/amigurumis/new']">
+          <mat-icon>add</mat-icon> Novo Amigurumi</a>
         <mat-divider></mat-divider>
       </mat-nav-list>
     </mat-sidenav>

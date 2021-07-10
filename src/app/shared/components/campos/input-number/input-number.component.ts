@@ -13,7 +13,7 @@ export class InputNumberComponent {
   @Input() formGroup: FormGroup;
   @Input() controlName: string;
   @Input() minimo = 0;
-  @Input() maximo = 10;
+  @Input() maximo = 100;
   @Input() step = 1;
 
   constructor(public validacao: ValidarCamposService) { }

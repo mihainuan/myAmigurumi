@@ -32,16 +32,20 @@ export class NewAmigurumiComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    //id em URL
     this.id = this.activatedRoute.snapshot.params['id'];
+
+    //Caso existir ID em URL, passa objeto com dados para edição
+    //Caso contrário, cria novo formulário em branco
     if (this.id) {
       this.amigurumiService.visualizar(this.id)
-        .subscribe((amigurumi: Amigurumi) => this.criarFormulario(amigurumi));
+      .subscribe((amigurumi: Amigurumi) => this.criarFormulario(amigurumi));
     } else {
       this.criarFormulario(this.criarAmigurumiEmBranco());
     }
 
-    this.categorias = ['Personagens (Filmes)', 'Animais', 'Pessoas', 'Natureza', 'Outros'];
-
+    // Init em array de Categorias
+    this.categorias = ['Animais', 'Natureza', 'Personagens de Filmes', 'Pessoas','Outros'];
   }
 
   submit(): void {
@@ -63,6 +67,7 @@ export class NewAmigurumiComponent implements OnInit {
     this.cadastro.reset();
   }
 
+  //Editar
   private criarFormulario(amigurumi: Amigurumi): void {
     this.cadastro = this.fb.group({
       nome: [amigurumi.nome, [Validators.required, Validators.minLength(2), Validators.maxLength(256)]],
@@ -76,6 +81,7 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
+  //Criar novo
   private criarAmigurumiEmBranco(): Amigurumi {
     return {
       id: null,
@@ -90,6 +96,7 @@ export class NewAmigurumiComponent implements OnInit {
     } as Amigurumi;
   }
 
+  //Salvar
   private salvar(amigurumi: Amigurumi): void {
     this.amigurumiService.salvar(amigurumi).subscribe(() => {
       const config = {
