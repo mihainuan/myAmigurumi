@@ -1,0 +1,22 @@
+<mat-toolbar class="app-title">Cadastrar Amigurumi</mat-toolbar>
+<div class="main-div">
+  <mat-card class="center width50" *ngIf="cadastro" >
+    <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="submit()" (ngReset)="reiniciarForm()">
+      <mat-card-content>
+        <amg-input-text titulo="Nome *" controlName="nome" [formGroup]="cadastro"></amg-input-text>
+        <amg-input-text titulo="Link Foto" controlName="urlFoto" [formGroup]="cadastro"></amg-input-text>
+        <amg-input-date titulo="Data de Criação *" controlName="criadoEm" [formGroup]="cadastro"></amg-input-date>
+        <amg-input-textarea titulo="Material" controlName="material" [formGroup]="cadastro"></amg-input-textarea>
+        <amg-input-textarea titulo="Altura" controlName="altura" [formGroup]="cadastro"></amg-input-textarea>
+        <amg-input-textarea titulo="Largura" controlName="largura" [formGroup]="cadastro"></amg-input-textarea>
+        <amg-input-textarea titulo="Peso" controlName="peso" [formGroup]="cadastro"></amg-input-textarea>
+
+        <amg-input-text titulo="Categoria ID *" controlName="categoriaId" [formGroup]="cadastro"></amg-input-text>
+      </mat-card-content>
+      <mat-card-actions>
+        <button type="submit" color="primary" mat-raised-button>Salvar</button>
+        <button type="reset" color="accent" mat-raised-button>Cancelar</button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
