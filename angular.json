@@ -24,7 +24,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.css"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -85,7 +85,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "src/styles.css"
+              "src/assets/styles/styles.scss"
             ],
             "scripts": []
           }
@@ -118,5 +118,10 @@
       }
     }
   },
-  "defaultProject": "myAmigurumi"
+  "defaultProject": "myAmigurumi",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

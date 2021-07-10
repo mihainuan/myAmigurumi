@@ -1,0 +1,20 @@
+<mat-list *ngIf="amigurumi; else semRegistro">
+    <mat-list-item> Nome: {{amigurumi.nome}} </mat-list-item>
+    <mat-list-item> Data de criação: {{amigurumi.criadoEm | date: 'dd/MM/yyyy' }} </mat-list-item>
+    <mat-list-item> Altura (cm): {{amigurumi.altura}} </mat-list-item>
+    <mat-list-item> Largura (cm): {{amigurumi.largura}} </mat-list-item>
+    <mat-list-item> Peso (kg): {{amigurumi.peso}} </mat-list-item>
+    <mat-list-item class="quebrar-linha"> Material: {{amigurumi.material}} </mat-list-item>
+    <mat-list-item> Categoria: <a [href]="amigurumi.categoriaId" target="_blank"> {{amigurumi.nota}}</a> </mat-list-item>
+    <img mat-card-image [src]="amigurumi.urlFoto || semFoto" >
+  </mat-list>
+  <mat-card>
+    <mat-card-actions>
+      <button color="accent" mat-raised-button (click)="editar()"><mat-icon>edit</mat-icon> Editar item</button>
+      <button color="warn" mat-raised-button (click)="excluir()"><mat-icon>delete</mat-icon> Excluir item</button>
+    </mat-card-actions>
+  </mat-card>
+  
+  <ng-template #semRegistro>
+    <h1 class="full-width main-div">Nenhum registro encontrado!</h1>
+  </ng-template>
