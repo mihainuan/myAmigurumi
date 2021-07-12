@@ -14,7 +14,7 @@ export class InputNumberComponent {
   @Input() controlName: string;
   @Input() minimo = 0;
   @Input() maximo = 100;
-  @Input() step = 1;
+  @Input() step = 0.5;
 
   constructor(public validacao: ValidarCamposService) { }
 
