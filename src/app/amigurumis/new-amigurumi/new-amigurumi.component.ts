@@ -111,7 +111,8 @@ export class NewAmigurumiComponent implements OnInit {
         data: {
           btnSucesso: 'Ir para a listagem',
           btnCancelar: 'Cadastrar um novo Amigurumi',
-          corBtnCancelar: 'primary',
+          corBtnSucesso: 'primary',
+          corBtnCancelar: 'accent',
           possuirBtnFechar: true
         } as Alerta
       };

@@ -43,6 +43,28 @@
       "peso": 42.5,
       "categoriaId": "Filmes",
       "id": 4
+    },
+    {
+      "nome": "KOMBI AMIGURUMI",
+      "urlFoto": "https://www.decorfacil.com/wp-content/uploads/2018/10/20181023amigurumi-11.jpg",
+      "criadoEm": "2021-07-12T03:00:00.000Z",
+      "material": "Amigurumi motorizado.\nDepois dos pontos e formas básicas você já pode começar a partir para projetos mais elaborados e diferentes, como esse do vídeo onde ensina a fazer um coala gracinha de tricô. Bora lá aprender?",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoriaId": "Outros",
+      "id": 5
+    },
+    {
+      "nome": "AMIGURUMI HAMBURGER",
+      "urlFoto": "https://www.decorfacil.com/wp-content/uploads/2018/10/20181023amigurumi-10.jpg",
+      "criadoEm": "2021-07-12T03:00:00.000Z",
+      "material": "Uma delas é que os bichinhos geralmente possuem formas esféricas e cilíndricas. Outra particularidade são a cabeça e os olhos grandes, evidenciados em relação ao restante do corpo. Os amigurumis também são baixinhos, seu tamanho varia entre 10 e 30 centímetros.",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoriaId": "Natal",
+      "id": 6
     }
   ],
   "categorias": [
