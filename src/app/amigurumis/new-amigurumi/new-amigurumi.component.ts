@@ -32,11 +32,11 @@ export class NewAmigurumiComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    //id em URL
-    this.id = this.activatedRoute.snapshot.params['id'];
+    // id em URL
+    this.id = this.activatedRoute.snapshot.params.id;
 
-    //Caso existir ID em URL, passa objeto com dados para edição
-    //Caso contrário, cria novo formulário em branco
+    // Caso existir ID em URL, passa objeto com dados para edição
+    // Caso contrário, cria novo formulário em branco
     if (this.id) {
       this.amigurumiService.visualizar(this.id)
       .subscribe((amigurumi: Amigurumi) => this.criarFormulario(amigurumi));
@@ -44,8 +44,16 @@ export class NewAmigurumiComponent implements OnInit {
       this.criarFormulario(this.criarAmigurumiEmBranco());
     }
 
-    // Init em array de Categorias
-    this.categorias = ['Animais', 'Natureza', 'Personagens de Filmes', 'Pessoas','Outros'];
+    // Valores em array<string> com Categorias
+    this.categorias = [
+      'Animais',
+      'Filmes',
+      'Natureza',
+      'Natal',
+      'Pessoas',
+      'Pokemóns',
+      'Outros'
+    ];
   }
 
   submit(): void {
@@ -67,7 +75,7 @@ export class NewAmigurumiComponent implements OnInit {
     this.cadastro.reset();
   }
 
-  //Editar
+  // Criar Formulário
   private criarFormulario(amigurumi: Amigurumi): void {
     this.cadastro = this.fb.group({
       nome: [amigurumi.nome, [Validators.required, Validators.minLength(2), Validators.maxLength(256)]],
@@ -81,7 +89,7 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
-  //Criar novo
+  // Criar novo Amigurumi
   private criarAmigurumiEmBranco(): Amigurumi {
     return {
       id: null,
@@ -96,14 +104,17 @@ export class NewAmigurumiComponent implements OnInit {
     } as Amigurumi;
   }
 
-  //Salvar
+  // Salvar Amigurumi
   private salvar(amigurumi: Amigurumi): void {
-    this.amigurumiService.salvar(amigurumi).subscribe(() => {
+    this.amigurumiService.salvar(amigurumi).subscribe(
+      // Success (execura em caso de sucesso)
+      () => {
       const config = {
         data: {
           btnSucesso: 'Ir para a listagem',
           btnCancelar: 'Cadastrar um novo Amigurumi',
-          corBtnCancelar: 'primary',
+          corBtnSucesso: 'primary',
+          corBtnCancelar: 'accent',
           possuirBtnFechar: true
         } as Alerta
       };
@@ -116,6 +127,7 @@ export class NewAmigurumiComponent implements OnInit {
         }
       });
     },
+    // Erro (executa caso houver erro)
     () => {
       const config = {
         data: {
@@ -126,9 +138,13 @@ export class NewAmigurumiComponent implements OnInit {
         } as Alerta
       };
       this.dialog.open(AlertaComponent, config);
-    });
+    },
+    // Complete (executa sempre)
+    () => {}
+    );
   }
 
+  // Editar Amigurumi
   private editar(amigurumi: Amigurumi): void {
     this.amigurumiService.editar(amigurumi).subscribe(() => {
       const config = {

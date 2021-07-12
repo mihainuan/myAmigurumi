@@ -6,8 +6,9 @@ import { AbstractControl } from '@angular/forms';
 })
 export class ValidarCamposService {
 
-  constructor() { }
+  constructor() {}
 
+  // Validação de textos obrigatórios
   hasErrorValidar(control: AbstractControl, errorName: string): boolean {
     if ((control.dirty || control.touched) && this.hasError(control, errorName)) {
       return true;
@@ -15,10 +16,12 @@ export class ValidarCamposService {
     return false;
   }
 
+  // Verifica erros no formulário
   hasError(control: AbstractControl, errorName: string): boolean {
     return control.hasError(errorName);
   }
 
+  // Validação de tamanho de caracteres dinamicamente
   lengthValidar(control: AbstractControl, errorName: string): number {
     const error = control.errors[errorName];
     return error.requiredLength || error.min || error.max || 0;

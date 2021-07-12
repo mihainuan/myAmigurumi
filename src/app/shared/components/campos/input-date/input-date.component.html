@@ -1,5 +1,5 @@
 <div [formGroup]="formGroup">
-    <mat-form-field class="full-width">
+    <mat-form-field class="width50">
       <input  matInput
               readonly
               [matDatepicker]="picker"
@@ -9,6 +9,6 @@
               (click)="picker.open()">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
-    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo obrigatório</mat-error>
+      <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo de Data é obrigatório</mat-error>
     </mat-form-field>
   </div>
