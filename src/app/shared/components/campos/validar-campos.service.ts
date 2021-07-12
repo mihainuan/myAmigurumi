@@ -6,7 +6,7 @@ import { AbstractControl } from '@angular/forms';
 })
 export class ValidarCamposService {
 
-  constructor() { }
+  constructor() {}
 
   //Validação de textos obrigatórios
   hasErrorValidar(control: AbstractControl, errorName: string): boolean {
@@ -16,6 +16,7 @@ export class ValidarCamposService {
     return false;
   }
 
+  //Verifica erros no formulário
   hasError(control: AbstractControl, errorName: string): boolean {
     return control.hasError(errorName);
   }
