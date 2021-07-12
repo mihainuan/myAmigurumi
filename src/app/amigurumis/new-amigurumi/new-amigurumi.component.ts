@@ -44,8 +44,16 @@ export class NewAmigurumiComponent implements OnInit {
       this.criarFormulario(this.criarAmigurumiEmBranco());
     }
 
-    // Init em array de Categorias
-    this.categorias = ['Animais', 'Natureza', 'Personagens de Filmes', 'Pessoas', 'Outros'];
+    // Valores em array<string> com Categorias
+    this.categorias = [
+      'Animais',
+      'Filmes',
+      'Natureza',
+      'Natal',
+      'Pessoas',
+      'Pokemóns',
+      'Outros'
+    ];
   }
 
   submit(): void {

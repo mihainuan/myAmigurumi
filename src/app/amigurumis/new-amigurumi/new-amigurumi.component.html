@@ -3,7 +3,11 @@
   </mat-toolbar>
 <div class="main-div">
   <mat-card class="center width50" *ngIf="cadastro" >
-    <form autocomplete="off" novalidate [formGroup]="cadastro" (ngSubmit)="submit()" (ngReset)="reiniciarForm()">
+    <form 
+    autocomplete="off" 
+    novalidate [formGroup]="cadastro" 
+    (ngSubmit)="submit()" 
+    (ngReset)="reiniciarForm()">
       <mat-card-content>
         <amg-input-text titulo="Nome *" controlName="nome" [formGroup]="cadastro"></amg-input-text>
         <amg-input-select titulo="Categoria *" [opcoes]="categorias" controlName="categoriaId" [formGroup]="cadastro"></amg-input-select>
