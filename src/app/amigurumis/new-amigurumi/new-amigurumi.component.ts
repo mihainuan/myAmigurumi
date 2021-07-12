@@ -106,7 +106,9 @@ export class NewAmigurumiComponent implements OnInit {
 
   // Salvar Amigurumi
   private salvar(amigurumi: Amigurumi): void {
-    this.amigurumiService.salvar(amigurumi).subscribe(() => {
+    this.amigurumiService.salvar(amigurumi).subscribe(
+      // Success (execura em caso de sucesso)
+      () => {
       const config = {
         data: {
           btnSucesso: 'Ir para a listagem',
@@ -125,6 +127,7 @@ export class NewAmigurumiComponent implements OnInit {
         }
       });
     },
+    // Erro (executa caso houver erro)
     () => {
       const config = {
         data: {
@@ -135,7 +138,10 @@ export class NewAmigurumiComponent implements OnInit {
         } as Alerta
       };
       this.dialog.open(AlertaComponent, config);
-    });
+    },
+    // Complete (executa sempre)
+    () => {}
+    );
   }
 
   // Editar Amigurumi
