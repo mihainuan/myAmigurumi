@@ -75,7 +75,7 @@ export class NewAmigurumiComponent implements OnInit {
     this.cadastro.reset();
   }
 
-  // Editar
+  // Criar Formulário
   private criarFormulario(amigurumi: Amigurumi): void {
     this.cadastro = this.fb.group({
       nome: [amigurumi.nome, [Validators.required, Validators.minLength(2), Validators.maxLength(256)]],
@@ -89,7 +89,7 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
-  // Criar novo
+  // Criar novo Amigurumi
   private criarAmigurumiEmBranco(): Amigurumi {
     return {
       id: null,
@@ -104,7 +104,7 @@ export class NewAmigurumiComponent implements OnInit {
     } as Amigurumi;
   }
 
-  // Salvar
+  // Salvar Amigurumi
   private salvar(amigurumi: Amigurumi): void {
     this.amigurumiService.salvar(amigurumi).subscribe(() => {
       const config = {
@@ -137,6 +137,7 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
+  // Editar Amigurumi
   private editar(amigurumi: Amigurumi): void {
     this.amigurumiService.editar(amigurumi).subscribe(() => {
       const config = {

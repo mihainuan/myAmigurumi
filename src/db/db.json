@@ -32,6 +32,17 @@
       "peso": 42,
       "categoriaId": "Natureza",
       "id": 3
+    },
+    {
+      "nome": "SONIC AMIGURUMI",
+      "urlFoto": "https://1.bp.blogspot.com/-sCxnkv5xirI/X5WAv0qyhkI/AAAAAAAANLU/ABa2-DlBNtwDK6uSER6fSx646RbIhwedgCLcBGAsYHQ/s2048/20191111_125122.jpg",
+      "criadoEm": "2021-07-12T03:00:00.000Z",
+      "material": " Estou apaixonada por este Sonic Amigurumi. É uma técnica muito cativante. A medida que o boneco vai ficando pronto, você tem a impressão de que ele está criando vida. Sem perceber, conversamos e nos apaixonamos por eles.",
+      "altura": 99.5,
+      "largura": 19.5,
+      "peso": 42.5,
+      "categoriaId": "Filmes",
+      "id": 4
     }
   ],
   "categorias": [

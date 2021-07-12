@@ -7,4 +7,3 @@ export interface Alerta {
     corBtnCancelar?: string;
     possuirBtnFechar?: boolean;
   }
-  
