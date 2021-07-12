@@ -1,0 +1,74 @@
+{
+  "amigurumis": [],
+  "categorias": [
+    {
+      "id": 1,
+      "categoria": "Personagens (Filmes)"
+    },
+    {
+      "id": 2,
+      "categoria": "Animais"
+    },
+    {
+      "id": 3,
+      "categoria": "Pessoas"
+    },
+    {
+      "id": 4,
+      "categoria": "Natureza"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "amigurumis": [
+        {
+          "id": 1,
+          "nome": "Boneco de crochê - Luca (Amigurumi)",
+          "altura": "20cm",
+          "largura": "10cm",
+          "peso": "100g",
+          "material": "100% Algodão",
+          "criadoEm": "10/07/2021",
+          "categoriaId": 1
+        }
+      ],
+      "total": "R$ 199,00",
+      "datsPedido": "10/07/2021",
+      "clienteId": 1
+    },
+    {
+      "amigurumis": [
+        {
+          "id": 2,
+          "nome": "Boneco de Crochê - Lilo & Stitch (Amigurumi)",
+          "urlFoto": "https://img.elo7.com.br/product/zoom/296E267/boneco-stitch-croche-lilo-stitch-amigurumi-11-cm-algodao-croche.jpg",
+          "altura": "12cm",
+          "largura": "11cm",
+          "peso": "62g",
+          "material": "100% Algodão",
+          "criadoEm": "31/07/2020",
+          "categoriaId": 1
+        }
+      ],
+      "total": "R$ 109,90",
+      "datsPedido": "09/07/2021",
+      "clienteId": 2,
+      "id": 2
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Mihai"
+    },
+    {
+      "nome": "Darling",
+      "id": 2
+    },
+    {
+      "nome": "Naty",
+      "id": 3
+    }
+  ]
+}

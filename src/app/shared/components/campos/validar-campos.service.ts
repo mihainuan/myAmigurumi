@@ -8,6 +8,7 @@ export class ValidarCamposService {
 
   constructor() { }
 
+  //Validação de textos obrigatórios
   hasErrorValidar(control: AbstractControl, errorName: string): boolean {
     if ((control.dirty || control.touched) && this.hasError(control, errorName)) {
       return true;
@@ -19,6 +20,7 @@ export class ValidarCamposService {
     return control.hasError(errorName);
   }
 
+  //Validação de números (Mínimo e Máximo)
   lengthValidar(control: AbstractControl, errorName: string): number {
     const error = control.errors[errorName];
     return error.requiredLength || error.min || error.max || 0;
