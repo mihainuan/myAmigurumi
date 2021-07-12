@@ -23,6 +23,5 @@ export class TopoComponent implements OnInit {
   closeSideNav() {
     this.sidenav.close();
   }
-
-
+  
 }

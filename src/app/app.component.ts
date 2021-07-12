@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
   selector: 'amg-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
-  
 })
 export class AppComponent {
   title = 'myAmigurumi APP';

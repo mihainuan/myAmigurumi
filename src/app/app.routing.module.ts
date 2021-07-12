@@ -38,16 +38,16 @@ const routes: Routes = [
       }
     ]
   },
-  { 
-    path: '**', 
-    redirectTo: 'amigurumis' 
-  }  
+  {
+    path: '**',
+    redirectTo: 'amigurumis'
+  }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
-    AmigurumisModule  
+    AmigurumisModule
   ],
   exports: [RouterModule]
 })

@@ -16,7 +16,7 @@ export class InputTextComponent {
 
   constructor(public validacao: ValidarCamposService) { }
 
-  //Retorna o form control através do controlName
+  // Retorna o form control através do controlName
   get formControl(): AbstractControl {
     return this.formGroup.controls[this.controlName];
   }

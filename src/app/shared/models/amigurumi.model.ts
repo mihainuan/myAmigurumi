@@ -8,4 +8,4 @@ export interface Amigurumi {
     material?: string;
     criadoEm: Date;
     categoriaId: number;
-  }
+}

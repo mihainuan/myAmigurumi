@@ -25,7 +25,7 @@ export class ConfigParamsService {
     if (config.campo) {
       httpParams = httpParams.set(config.campo.tipo, config.campo.valor.toString());
     }
-    
+
     httpParams = httpParams.set('_sort', 'id');
     httpParams = httpParams.set('_order', 'desc');
 

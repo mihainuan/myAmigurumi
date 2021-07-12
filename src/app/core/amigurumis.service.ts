@@ -5,7 +5,7 @@ import { Amigurumi } from '../shared/models/amigurumi.model';
 import { ConfigPrams } from '../shared/models/config-params.model';
 import { ConfigParamsService } from './config-params.service';
 
-const API_Url = 'http://localhost:3000/amigurumis/';
+const API_URL = 'http://localhost:3000/amigurumis/';
 
 @Injectable({
   providedIn: 'root'
@@ -17,23 +17,23 @@ export class AmigurumisService {
     private configService: ConfigParamsService) { }
 
   salvar(amigurumi: Amigurumi): Observable<Amigurumi> {
-    return this.http.post<Amigurumi>(API_Url, amigurumi);
+    return this.http.post<Amigurumi>(API_URL, amigurumi);
   }
 
   editar(amigurumi: Amigurumi): Observable<Amigurumi> {
-    return this.http.put<Amigurumi>(API_Url + amigurumi.id, amigurumi);
+    return this.http.put<Amigurumi>(API_URL + amigurumi.id, amigurumi);
   }
 
   listar(config: ConfigPrams): Observable<Amigurumi[]> {
     const configPrams = this.configService.configurarParametros(config);
-    return this.http.get<Amigurumi[]>(API_Url, {params: configPrams});
+    return this.http.get<Amigurumi[]>(API_URL, {params: configPrams});
   }
 
   visualizar(id: number): Observable<Amigurumi> {
-    return this.http.get<Amigurumi>(API_Url + id);
+    return this.http.get<Amigurumi>(API_URL + id);
   }
 
   excluir(id: number): Observable<void> {
-    return this.http.delete<void>(API_Url + id);
+    return this.http.delete<void>(API_URL + id);
   }
 }

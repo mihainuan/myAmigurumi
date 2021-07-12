@@ -95,4 +95,4 @@ import { MatNativeDateModule } from '@angular/material/core';
         MatNativeDateModule
     ]
 })
-export class MaterialModule {}
+export class MaterialModule { }
