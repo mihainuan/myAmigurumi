@@ -10,8 +10,8 @@ import { Alerta } from '../../models/alerta.model';
 export class AlertaComponent implements OnInit {
 
   alerta = {
-    titulo: 'Sucesso!',
-    descricao: 'Seu registro foi cadastrado com sucesso!',
+    titulo: 'Feito com Sucesso!',
+    descricao: 'Amigurumi cadastrado com sucesso!',
     btnSucesso: 'OK',
     btnCancelar: 'Cancelar',
     corBtnSucesso: 'accent',

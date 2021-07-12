@@ -1,5 +1,50 @@
 {
-  "amigurumis": [],
+  "amigurumis": [
+    {
+      "nome": "Boneco de crochê - Luca (Amigurumi)",
+      "urlFoto": "https://i.postimg.cc/bNR36Ls2/Luca.jpg",
+      "criadoEm": "2021-07-10T03:00:00.000Z",
+      "material": "My first desire to create was the ability to make Luca! Amigurumi is made by creating something called the Magic Ring and this allows you to work in the round. This technqiue is a way to create 3D shapes that wouldn’t be do-able in any other way! It’s a fun challenge to try and making dolls is a great and exciting hobby.",
+      "altura": 22,
+      "largura": 11,
+      "peso": 42,
+      "categoriaId": "Personagens de Filmes",
+      "id": 1
+    },
+    {
+      "nome": "Boneco de Crochê - Lilo & Stitch (Amigurumi)",
+      "urlFoto": "https://img.elo7.com.br/product/zoom/296E267/boneco-stitch-croche-lilo-stitch-amigurumi-11-cm-algodao-croche.jpg",
+      "criadoEm": "2021-07-09T03:00:00.000Z",
+      "material": "For those who don’t know what amigurumi is, by definition it is “the Japanese art of knitting or crocheting small, stuffed yarn creatures.” Don’t know what that might look like? Here is an example of an amigurumi piece that I’ve done!",
+      "altura": 40,
+      "largura": 10,
+      "peso": 33,
+      "categoriaId": "Personagens de Filmes",
+      "id": 2
+    },
+    {
+      "nome": "Girassóis de crochê - (Amigurumi)",
+      "urlFoto": "https://www.tinyteddiesbyelke.com/wp-content/uploads/2016/05/amigurumi-flowers.jpg",
+      "criadoEm": "2021-07-12T03:00:00.000Z",
+      "material": "When most people think of knit and crochet, they generally think of hats, scarves, sweaters, anything wearable, right? That was my assumption of the craft before I had started! However, what finally made me jump into it was the art form was Amigurumi!",
+      "altura": 30,
+      "largura": 30,
+      "peso": 42,
+      "categoriaId": "Natureza",
+      "id": 3
+    },
+    {
+      "nome": "SONIC AMIGURUMI",
+      "urlFoto": "https://1.bp.blogspot.com/-sCxnkv5xirI/X5WAv0qyhkI/AAAAAAAANLU/ABa2-DlBNtwDK6uSER6fSx646RbIhwedgCLcBGAsYHQ/s2048/20191111_125122.jpg",
+      "criadoEm": "2021-07-12T03:00:00.000Z",
+      "material": " Estou apaixonada por este Sonic Amigurumi. É uma técnica muito cativante. A medida que o boneco vai ficando pronto, você tem a impressão de que ele está criando vida. Sem perceber, conversamos e nos apaixonamos por eles.",
+      "altura": 99.5,
+      "largura": 19.5,
+      "peso": 42.5,
+      "categoriaId": "Filmes",
+      "id": 4
+    }
+  ],
   "categorias": [
     {
       "id": 1,
