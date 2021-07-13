@@ -10,7 +10,7 @@
     (ngReset)="reiniciarForm()">
       <mat-card-content>
         <amg-input-text titulo="Nome *" controlName="nome" [formGroup]="cadastro"></amg-input-text>
-        <amg-input-select titulo="Categoria *" [opcoes]="categorias" controlName="categoriaId" [formGroup]="cadastro"></amg-input-select>
+        <amg-input-select titulo="Categoria *" [opcoes]="categorias" controlName="categoria" [formGroup]="cadastro"></amg-input-select>
         <amg-input-text titulo="Link Foto" controlName="urlFoto" [formGroup]="cadastro"></amg-input-text>
         <amg-input-date titulo="Data de Criação *" controlName="criadoEm" [formGroup]="cadastro"></amg-input-date>
         <amg-input-textarea titulo="Descrição do Material" controlName="material" [formGroup]="cadastro"></amg-input-textarea>

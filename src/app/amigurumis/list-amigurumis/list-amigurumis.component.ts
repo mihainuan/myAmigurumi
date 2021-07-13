@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+
 import { debounceTime } from 'rxjs/operators';
+
 import { AmigurumisService } from 'src/app/core/amigurumis.service';
 import { Amigurumi } from 'src/app/shared/models/amigurumi.model';
 import { ConfigPrams } from 'src/app/shared/models/config-params.model';
@@ -44,8 +46,15 @@ export class ListAmigurumisComponent implements OnInit {
       });
 
     this.filtrosListagem.get('categoria').valueChanges.subscribe((val: string) => {
-      this.config.campo = { tipo: 'categoria', valor: val };
-      this.resetarConsulta();
+      if (val) {
+        this.config.campo = { tipo: 'categoria', valor: val };
+        console.log(val);
+        this.resetarConsulta();
+      } else {
+        console.log(val);
+        this.config = {};
+        this.resetarConsulta();
+      }
     });
 
     // Array de Categorias

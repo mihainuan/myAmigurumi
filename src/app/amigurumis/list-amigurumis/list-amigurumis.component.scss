@@ -20,6 +20,12 @@
     margin: auto;
     display: block;
   }
+
+  .mat-card-button {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
   // Caso tela de Smartphone
   @media screen and (min-width: 525px) {

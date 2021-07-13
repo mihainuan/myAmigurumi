@@ -5,7 +5,7 @@
     <mat-list-item> Largura (cm): {{amigurumi.largura}} </mat-list-item>
     <mat-list-item> Peso (kg): {{amigurumi.peso}} </mat-list-item>
     <mat-list-item class="quebrar-linha"> Material: {{amigurumi.material}} </mat-list-item>
-    <mat-list-item> Categoria: <a [href]="amigurumi.categoriaId" target="_blank"> {{amigurumi.nota}}</a> </mat-list-item>
+    <mat-list-item> Categoria: <a [href]="amigurumi.categoria" target="_blank"> {{amigurumi.nota}}</a> </mat-list-item>
     <img mat-card-image [src]="amigurumi.urlFoto || semFoto" >
   </mat-list>
   <mat-card>

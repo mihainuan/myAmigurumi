@@ -85,7 +85,7 @@ export class NewAmigurumiComponent implements OnInit {
       altura: [amigurumi.altura],
       largura: [amigurumi.largura],
       peso: [amigurumi.peso],
-      categoriaId: [amigurumi.categoriaId, [Validators.required]]
+      categoria: [amigurumi.categoria, [Validators.required]]
     });
   }
 
@@ -100,7 +100,7 @@ export class NewAmigurumiComponent implements OnInit {
       peso: null,
       material: null,
       criadoEm: null,
-      categoriaId: null
+      categoria: null
     } as Amigurumi;
   }
 

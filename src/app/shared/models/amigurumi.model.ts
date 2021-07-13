@@ -7,5 +7,5 @@ export interface Amigurumi {
     peso?: string;
     material?: string;
     criadoEm: Date;
-    categoriaId: number;
+    categoria: number;
 }
