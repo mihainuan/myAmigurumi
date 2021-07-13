@@ -154,7 +154,7 @@ export class NewAmigurumiComponent implements OnInit {
         } as Alerta
       };
       const dialogRef = this.dialog.open(AlertaComponent, config);
-      dialogRef.afterClosed().subscribe(() => this.router.navigateByUrl('amigurumis'));
+      dialogRef.afterClosed().subscribe(() => this.voltar());
     },
     () => {
       const config = {

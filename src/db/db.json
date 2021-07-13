@@ -153,17 +153,6 @@
       "peso": null,
       "categoria": "Pessoas",
       "id": 14
-    },
-    {
-      "nome": "em branco - AMIGURUMI",
-      "urlFoto": null,
-      "criadoEm": "2021-07-13T03:00:00.000Z",
-      "material": null,
-      "altura": 1,
-      "largura": 0.5,
-      "peso": 1.5,
-      "categoria": "Outros",
-      "id": 15
     }
   ],
   "categorias": [
