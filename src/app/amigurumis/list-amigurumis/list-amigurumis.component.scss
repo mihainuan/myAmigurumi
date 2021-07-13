@@ -5,8 +5,7 @@
     justify-content: space-between;
      padding: 10px;
     .home-card {
-      margin-bottom: 10px;
-  
+      margin-bottom: 10px;  
     }
   }
   
@@ -20,7 +19,18 @@
     margin: auto;
     display: block;
   }
+
+  .mat-card-button {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quebrar-linha{
+    white-space: pre-line;
+  }
   
+  // Caso tela de Smartphone
   @media screen and (min-width: 525px) {
     .home-content {
       .home-card {
@@ -29,6 +39,7 @@
     }
   }
   
+  // Caso tela de Tablet
   @media screen and (min-width: 800px) {
     .home-content {
       .home-card {
@@ -37,6 +48,7 @@
     }
   }
   
+  // Caso tela de Desktop
   @media screen and (min-width: 1300px) {
       .home-content {
         .home-card {

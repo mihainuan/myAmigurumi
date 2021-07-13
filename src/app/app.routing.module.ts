@@ -19,7 +19,7 @@ const routes: Routes = [
         component: ListAmigurumisComponent
       },
       {
-        path: 'new',
+        path: 'novo',
         children: [
           {
             path: '',

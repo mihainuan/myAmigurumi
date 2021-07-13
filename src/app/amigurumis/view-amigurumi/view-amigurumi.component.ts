@@ -23,12 +23,12 @@ export class ViewAmigurumiComponent implements OnInit {
     private amigurumisService: AmigurumisService) { }
 
   ngOnInit() {
-    this.id = this.activatedRoute.snapshot.params['id'];
+    this.id = this.activatedRoute.snapshot.params.id;
     this.visualizar();
   }
 
   editar(): void {
-    this.router.navigateByUrl('/amigurumis/new/' + this.id);
+    this.router.navigateByUrl('/amigurumis/novo/' + this.id);
   }
 
   excluir(): void {
@@ -45,13 +45,17 @@ export class ViewAmigurumiComponent implements OnInit {
     dialogRef.afterClosed().subscribe((opcao: boolean) => {
       if (opcao) {
         this.amigurumisService.excluir(this.id)
-        .subscribe(() => this.router.navigateByUrl('/amigurumis'));
+        .subscribe(() => this.voltar());
       }
     });
   }
 
   private visualizar(): void {
     this.amigurumisService.visualizar(this.id).subscribe((amigurumi: Amigurumi) => this.amigurumi = amigurumi);
+  }
+
+  voltar(): void {
+    this.router.navigateByUrl('/amigurumis');
   }
 
 }

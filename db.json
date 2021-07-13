@@ -8,7 +8,7 @@
       "altura": 22,
       "largura": 11,
       "peso": 42,
-      "categoriaId": "Personagens de Filmes",
+      "categoria": "Personagens de Filmes",
       "id": 1
     },
     {
@@ -19,7 +19,7 @@
       "altura": 40,
       "largura": 10,
       "peso": 33,
-      "categoriaId": "Personagens de Filmes",
+      "categoria": "Personagens de Filmes",
       "id": 2
     },
     {
@@ -30,7 +30,7 @@
       "altura": 30,
       "largura": 30,
       "peso": 42,
-      "categoriaId": "Natureza",
+      "categoria": "Natureza",
       "id": 3
     },
     {
@@ -41,7 +41,7 @@
       "altura": 99.5,
       "largura": 19.5,
       "peso": 42.5,
-      "categoriaId": "Filmes",
+      "categoria": "Filmes",
       "id": 4
     }
   ],
@@ -75,7 +75,7 @@
           "peso": "100g",
           "material": "100% Algodão",
           "criadoEm": "10/07/2021",
-          "categoriaId": 1
+          "categoria": 1
         }
       ],
       "total": "R$ 199,00",
@@ -93,7 +93,7 @@
           "peso": "62g",
           "material": "100% Algodão",
           "criadoEm": "31/07/2020",
-          "categoriaId": 1
+          "categoria": 1
         }
       ],
       "total": "R$ 109,90",

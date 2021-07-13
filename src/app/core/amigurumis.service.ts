@@ -14,7 +14,8 @@ export class AmigurumisService {
 
   constructor(
     private http: HttpClient,
-    private configService: ConfigParamsService) { }
+    private configService: ConfigParamsService
+  ) {}
 
   // Salva um novo Amigurumi
   salvar(amigurumi: Amigurumi): Observable<Amigurumi> {
@@ -26,7 +27,7 @@ export class AmigurumisService {
     return this.http.put<Amigurumi>(API_URL + amigurumi.id, amigurumi);
   }
 
-  // Listar todos Amigurumis salvos
+  // Listagem de todos Amigurumis salvos
   listar(config: ConfigPrams): Observable<Amigurumi[]> {
     const configPrams = this.configService.configurarParametros(config);
     return this.http.get<Amigurumi[]>(API_URL, {params: configPrams});
