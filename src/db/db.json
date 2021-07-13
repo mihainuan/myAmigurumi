@@ -65,6 +65,94 @@
       "peso": null,
       "categoria": "Natal",
       "id": 6
+    },
+    {
+      "nome": "Elefante - AMIGURUMI",
+      "urlFoto": "https://i.pinimg.com/originals/74/73/6b/74736b404e292ce414df6d0f718b192e.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "crochet elephant pattern Crochet Elephant Stuffed Animal Rainbow Crochet Toy, Elephant, Stuffed Animal PATTERN: Ellis the Elephant - crochet Chubby ...",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoria": "Animais",
+      "id": 7
+    },
+    {
+      "nome": "Leão Lyon - AMIGURUMI",
+      "urlFoto": "https://a-static.mlcdn.com.br/618x463/amigurumi-leao-amarelo-e-marrom-tam-20x24x28-cm-450g-croche-charme-de-crochet/charmedecrochet/90b8403a0db511eb9a764201ac18502e/5a093ffdaa6f29eaaeec557bbc8f554e.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Amigurumi - Leão amarelo e marrom - tam. 20x24x28 cm - 450g - Crochê - Charme De Crochet\n\nFeito com linha 100% Algodão, enchimento de poliéster. Olhos e nariz com trava de segurança. Lavagem com sabão neutro e pano úmido. Amigurumi - Leão amarelo e marrom - tam. 20x24x28 cm - 450g - Crochê ",
+      "altura": 20,
+      "largura": 24,
+      "peso": 28,
+      "categoria": "Animais",
+      "id": 8
+    },
+    {
+      "nome": "Diversos Personagens -  Amigurumis",
+      "urlFoto": "https://imagens-revista.vivadecora.com.br/uploads/2019/10/Amigurumi-diversos-personagens.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Para quem não conhece o amigurumi, entender seu conceito não é difícil. O nome, por exemplo é uma junção das palavras japonesas “ami” (malha ou tricô) e “nuigurumi” (bichos de pelúcias). Ou seja, sua base é basicamente o tricô e o crochê, que permitem a confecção de uma série de bichinhos muito bonitos e que podem fazer parte da sua decoração, sobretudo a de quartos de bebê e assim por diante.",
+      "altura": 12,
+      "largura": 23,
+      "peso": 43,
+      "categoria": "Outros",
+      "id": 9
+    },
+    {
+      "nome": "Mewtwo Amigurumi (Pokemón) ",
+      "urlFoto": "https://img.elo7.com.br/product/main/2E7CCB4/mewtwo-amigurumi-pokemon-nerd.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "\nMedidas Aproximadas: \n \nAltura: 43cm \nLarcura: 16cm \nComprimento: 24cm\n\n    Altura: 43.00 cm\n    Largura: 16.00 cm\n    Comprimento: 24.00 cm\n    Peso: 400 g\n    Código do produto: 122C4FE\n    Adicionado em: 07/04/2020\n",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoria": "Pokemóns",
+      "id": 10
+    },
+    {
+      "nome": "Evee Pokémon Amigurumi",
+      "urlFoto": "https://http2.mlstatic.com/D_NQ_NP_783072-MLB44662064601_012021-O.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Pokémon evee feito em técnica amigurumi, fio 100% algodão e enchimento antialérgico\nO amigurumi tem cerca de 25 centímetros",
+      "altura": 12,
+      "largura": 33,
+      "peso": 44,
+      "categoria": "Pokemóns",
+      "id": 11
+    },
+    {
+      "nome": "Pablo Picasso - Amigurumi",
+      "urlFoto": "https://img.elo7.com.br/product/main/3557A6C/pintores-famosos-amigurumi-van-gogh.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Boneco de crochê carinhosamente feito a mão \nLinha algodão 100% algodão \nOlhos com trava de segurança \nEnchimento de fibra siliconada hipoalergênico( anti-alérgico) \n \nAceitamos encomendas \nEnviamos para todo Brasil\n\n    Altura: 16.00 cm\n    Largura: 10.00 cm\n    Comprimento: 10.00 cm\n    Peso: 150 g\n    Código do produto: 14B6650\n    Adicionado em: 15/12/2020\n",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoria": "Pessoas",
+      "id": 12
+    },
+    {
+      "nome": "Salvador Dali - Amigurumi",
+      "urlFoto": "https://img.elo7.com.br/product/main/3557A6E/pintores-famosos-amigurumi-salvador-dali.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Boneco de crochê carinhosamente feito a mão \nLinha algodão 100% algodão \nOlhos com trava de segurança \nEnchimento de fibra siliconada hipoalergênico( anti-alérgico) \n \nAceitamos encomendas \nEnviamos para todo Brasil\n\n Altura: 16.00 cm\n Largura: 10.00 cm\n Comprimento: 10.00 cm\n Peso: 150 g\n Código do produto: 14B6650\n Adicionado em: 15/12/2020\n",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoria": "Pessoas",
+      "id": 13
+    },
+    {
+      "nome": "Leonardo DaVinci - Amigurumi",
+      "urlFoto": "https://img.elo7.com.br/product/main/3557A6F/pintores-famosos-amigurumi-rene-magritte.jpg",
+      "criadoEm": "2021-07-13T03:00:00.000Z",
+      "material": "Boneco de crochê carinhosamente feito a mão \nLinha algodão 100% algodão \nOlhos com trava de segurança \nEnchimento de fibra siliconada hipoalergênico( anti-alérgico) \n \nAceitamos encomendas \nEnviamos para todo Brasil\n\n Altura: 16.00 cm\n Largura: 10.00 cm\n Comprimento: 10.00 cm\n Peso: 150 g\n Código do produto: 14B6650\n Adicionado em: 15/12/2020\n",
+      "altura": null,
+      "largura": null,
+      "peso": null,
+      "categoria": "Pessoas",
+      "id": 14
     }
   ],
   "categorias": [

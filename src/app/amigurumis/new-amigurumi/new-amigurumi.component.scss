@@ -5,3 +5,26 @@
     display: flex;
     justify-content: space-between;
 }
+
+
+  // Caso tela de Tablet
+  @media screen and (max-width:1024px) {
+    .numbers-align {
+      display: grid;
+      align-items: center;
+    }
+}
+// Caso tela de Smartphone
+@media screen and (max-width:375px) {
+    .numbers-align {
+      display: grid;
+      align-items: center;
+    }
+    .mat-form-field-infix{
+      width: 100px;
+    }
+
+    .mat-card-actions{        
+        width: calc(10% - 52px);
+    }
+}

@@ -26,6 +26,7 @@ export class ConfigParamsService {
       httpParams = httpParams.set(config.campo.tipo, config.campo.valor.toString());
     }
 
+    // Ordenação padrão (mais recentes)
     httpParams = httpParams.set('_sort', 'id');
     httpParams = httpParams.set('_order', 'desc');
 

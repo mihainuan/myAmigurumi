@@ -33,25 +33,27 @@ export class ListAmigurumisComponent implements OnInit {
     private router: Router) { }
 
   ngOnInit(): void {
+
+    // Inicializa valores de filtros (reset)
     this.filtrosListagem = this.fb.group({
       nome: [''],
       categoria: ['']
     });
 
+    // Método para captar alterações no input de pesquisa
     this.filtrosListagem.get('nome').valueChanges
-      .pipe(debounceTime(400))
+      .pipe(debounceTime(420))
       .subscribe((val: string) => {
         this.config.pesquisa = val;
         this.resetarConsulta();
       });
 
+    // Método para captar alterações no menu de categorias
     this.filtrosListagem.get('categoria').valueChanges.subscribe((val: string) => {
       if (val) {
         this.config.campo = { tipo: 'categoria', valor: val };
-        console.log(val);
         this.resetarConsulta();
       } else {
-        console.log(val);
         this.config = {};
         this.resetarConsulta();
       }
