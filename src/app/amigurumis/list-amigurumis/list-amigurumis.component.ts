@@ -14,6 +14,7 @@ import { ConfigPrams } from 'src/app/shared/models/config-params.model';
   styleUrls: ['./list-amigurumis.component.scss']
 })
 export class ListAmigurumisComponent implements OnInit {
+  // Imagem padrão (sem foto)
   readonly semFoto = 'https://www.termoparts.com.br/wp-content/uploads/2017/10/no-image.jpg';
 
   // Inicialização de parâmetros HTTP
