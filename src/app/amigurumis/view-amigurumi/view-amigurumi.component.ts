@@ -54,4 +54,8 @@ export class ViewAmigurumiComponent implements OnInit {
     this.amigurumisService.visualizar(this.id).subscribe((amigurumi: Amigurumi) => this.amigurumi = amigurumi);
   }
 
+  voltar(): void {
+    this.router.navigateByUrl('/amigurumis');
+  }
+
 }

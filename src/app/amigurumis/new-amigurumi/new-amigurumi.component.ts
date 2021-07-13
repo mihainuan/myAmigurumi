@@ -169,4 +169,8 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
+  voltar(): void {
+    this.router.navigateByUrl('/amigurumis');
+  }
+
 }

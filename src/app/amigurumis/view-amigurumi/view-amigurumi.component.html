@@ -5,13 +5,15 @@
     <mat-list-item> Largura (cm): {{amigurumi.largura}} </mat-list-item>
     <mat-list-item> Peso (kg): {{amigurumi.peso}} </mat-list-item>
     <mat-list-item class="quebrar-linha"> Material: {{amigurumi.material}} </mat-list-item>
-    <mat-list-item> Categoria: <a [href]="amigurumi.categoria" target="_blank"> {{amigurumi.nota}}</a> </mat-list-item>
-    <img mat-card-image [src]="amigurumi.urlFoto || semFoto" >
+    <mat-list-item> Categoria: {{amigurumi.categoria}} </mat-list-item>
+    <mat-list-item  *ngIf="amigurumi.urlFoto"> <a style="color: aqua; text-align: center;" [href]="amigurumi.urlFoto" target="_blank">  LINK </a> </mat-list-item>
+    <img *ngIf="amigurumi.urlFoto" mat-card-image [src]="amigurumi.urlFoto || semFoto" >
   </mat-list>
   <mat-card>
     <mat-card-actions>
       <button color="accent" mat-raised-button (click)="editar()"><mat-icon>edit</mat-icon> Editar item</button>
       <button color="warn" mat-raised-button (click)="excluir()"><mat-icon>delete</mat-icon> Excluir item</button>
+      <button color="link" mat-raised-button (click)="voltar()"><mat-icon>arrow_back</mat-icon> Voltar</button>
     </mat-card-actions>
   </mat-card>
   
