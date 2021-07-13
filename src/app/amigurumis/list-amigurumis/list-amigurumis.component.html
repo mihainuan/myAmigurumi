@@ -1,4 +1,5 @@
-<mat-toolbar class="app-title">Amigurumis Cadastrados</mat-toolbar>
+<mat-toolbar class="app-title">
+  Amigurumis Cadastrados&#160;<mat-icon>android</mat-icon></mat-toolbar>
 
 <mat-card class="float-left margin10 filtro-listagem" >
   <form autocomplete="off" novalidate [formGroup]="filtrosListagem">
@@ -14,7 +15,7 @@
     <div class="float-left width50">
       <div class="padding10">
         <amg-input-select 
-        titulo="Gênero"
+        titulo="Categoria"
         controlName="categoria"
         [opcoes]="categorias"
         [formGroup]="filtrosListagem">
@@ -24,10 +25,11 @@
   </form>
 </mat-card>
 
-<div  class="home-content"
-      infiniteScroll
-      (scrolled)="onScroll()"
-      *ngIf="amigurumis.length; else semRegistro">
+<div  
+class="home-content"
+infiniteScroll
+(scrolled)="onScroll()"
+*ngIf="amigurumis.length; else semRegistro">
   <mat-card class="home-card" *ngFor="let amigurumi of amigurumis">
     <mat-card-header>
       <div mat-card-avatar></div>
@@ -41,7 +43,7 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button color="accent" mat-raised-button (click)="abrir(amigurumi.id)"><mat-icon>visibility</mat-icon> DETALHES</button>
+      <button color="accent" mat-raised-button (click)="abrir(amigurumi.id)"><mat-icon>visibility</mat-icon> MAIS DETALHES</button>
     </mat-card-actions>
   </mat-card>
 </div>

@@ -21,6 +21,7 @@
     display: block;
   }
   
+  // Caso tela de Smartphone
   @media screen and (min-width: 525px) {
     .home-content {
       .home-card {
@@ -29,6 +30,7 @@
     }
   }
   
+  // Caso tela de Tablet
   @media screen and (min-width: 800px) {
     .home-content {
       .home-card {
@@ -37,6 +39,7 @@
     }
   }
   
+  // Caso tela de Desktop
   @media screen and (min-width: 1300px) {
       .home-content {
         .home-card {
