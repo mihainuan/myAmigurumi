@@ -11,7 +11,6 @@ import { CamposModule } from '../shared/components/campos/campos.module';
 import { ListAmigurumisComponent } from './list-amigurumis/list-amigurumis.component';
 import { NewAmigurumiComponent } from './new-amigurumi/new-amigurumi.component';
 import { ViewAmigurumiComponent } from './view-amigurumi/view-amigurumi.component';
- 
 
 @NgModule({
   imports: [

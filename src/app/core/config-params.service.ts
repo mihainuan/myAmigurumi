@@ -13,15 +13,22 @@ export class ConfigParamsService {
 
     let httpParams = new HttpParams();
 
+    // Parâmetro de página
     if (config.pagina) {
       httpParams = httpParams.set('_page', config.pagina.toString());
     }
+
+    // Parâmetro de Limite
     if (config.limite) {
       httpParams = httpParams.set('_limit', config.limite.toString());
     }
+
+    // Parâmetro Query de pesquisa (texto)
     if (config.pesquisa) {
       httpParams = httpParams.set('q', config.pesquisa);
     }
+
+    // Parâmetro Query de tipoe e campo (texto)
     if (config.campo) {
       httpParams = httpParams.set(config.campo.tipo, config.campo.valor.toString());
     }

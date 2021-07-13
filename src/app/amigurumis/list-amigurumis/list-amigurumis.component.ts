@@ -49,7 +49,8 @@ export class ListAmigurumisComponent implements OnInit {
       });
 
     // Método para captar alterações no menu de categorias
-    this.filtrosListagem.get('categoria').valueChanges.subscribe((val: string) => {
+    this.filtrosListagem.get('categoria').valueChanges
+    .subscribe((val: string) => {
       if (val) {
         this.config.campo = { tipo: 'categoria', valor: val };
         this.resetarConsulta();
