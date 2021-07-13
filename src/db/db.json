@@ -117,7 +117,7 @@
       "material": "Pokémon evee feito em técnica amigurumi, fio 100% algodão e enchimento antialérgico\nO amigurumi tem cerca de 25 centímetros",
       "altura": 12,
       "largura": 33,
-      "peso": 44,
+      "peso": 443,
       "categoria": "Pokemóns",
       "id": 11
     },
@@ -137,9 +137,9 @@
       "urlFoto": "https://img.elo7.com.br/product/main/3557A6E/pintores-famosos-amigurumi-salvador-dali.jpg",
       "criadoEm": "2021-07-13T03:00:00.000Z",
       "material": "Boneco de crochê carinhosamente feito a mão \nLinha algodão 100% algodão \nOlhos com trava de segurança \nEnchimento de fibra siliconada hipoalergênico( anti-alérgico)",
-      "altura": null,
-      "largura": null,
-      "peso": null,
+      "altura": 12,
+      "largura": 21,
+      "peso": 31,
       "categoria": "Pessoas",
       "id": 13
     },
@@ -148,9 +148,9 @@
       "urlFoto": "https://img.elo7.com.br/product/main/3557A6F/pintores-famosos-amigurumi-rene-magritte.jpg",
       "criadoEm": "2021-07-13T03:00:00.000Z",
       "material": "Boneco de crochê carinhosamente feito a mão \nLinha algodão 100% algodão \nOlhos com trava de segurança \nEnchimento de fibra siliconada hipoalergênico( anti-alérgico) ",
-      "altura": null,
-      "largura": null,
-      "peso": null,
+      "altura": 0.5,
+      "largura": 0.5,
+      "peso": 1.5,
       "categoria": "Pessoas",
       "id": 14
     }

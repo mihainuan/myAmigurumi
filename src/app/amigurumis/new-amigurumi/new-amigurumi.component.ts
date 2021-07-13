@@ -34,7 +34,6 @@ export class NewAmigurumiComponent implements OnInit {
   ngOnInit(): void {
     // id em URL
     this.id = this.activatedRoute.snapshot.params.id;
-
     // Caso existir ID em URL, passa objeto com dados para edição
     // Caso contrário, cria novo formulário em branco
     if (this.id) {
@@ -89,7 +88,7 @@ export class NewAmigurumiComponent implements OnInit {
     });
   }
 
-  // Criar novo Amigurumi
+  // Criar novo Amigurumi em Branco
   private criarAmigurumiEmBranco(): Amigurumi {
     return {
       id: null,
@@ -112,7 +111,7 @@ export class NewAmigurumiComponent implements OnInit {
       const config = {
         data: {
           btnSucesso: 'Ir para a listagem',
-          btnCancelar: 'Cadastrar um novo Amigurumi',
+          btnCancelar: 'Cadastrar um novo amigurumi',
           corBtnSucesso: 'primary',
           corBtnCancelar: 'accent',
           possuirBtnFechar: true
@@ -131,8 +130,8 @@ export class NewAmigurumiComponent implements OnInit {
     () => {
       const config = {
         data: {
-          titulo: 'Erro ao salvar o registro!',
-          descricao: 'Não conseguimos salvar seu registro, favor tentar novamente mais tarde',
+          titulo: 'Erro ao salvar o amigurumi!',
+          descricao: 'Não conseguimos salvar seu amigurumi, por favor tente novamente',
           corBtnSucesso: 'warn',
           btnSucesso: 'Fechar'
         } as Alerta
@@ -149,8 +148,9 @@ export class NewAmigurumiComponent implements OnInit {
     this.amigurumiService.editar(amigurumi).subscribe(() => {
       const config = {
         data: {
-          descricao: 'Seu registro foi atualizado com sucesso!',
+          descricao: 'Seu amigurumi foi editado com sucesso!',
           btnSucesso: 'Ir para a listagem',
+          corBtnSucesso: 'link'
         } as Alerta
       };
       const dialogRef = this.dialog.open(AlertaComponent, config);
@@ -160,7 +160,7 @@ export class NewAmigurumiComponent implements OnInit {
       const config = {
         data: {
           titulo: 'Erro ao editar o registro!',
-          descricao: 'Não conseguimos editar seu registro, favor tentar novamente mais tarde',
+          descricao: 'Não conseguimos editar seu amigurumi, por favor tente novamente',
           corBtnSucesso: 'warn',
           btnSucesso: 'Fechar'
         } as Alerta
